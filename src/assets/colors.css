@@ -1,0 +1,13 @@
+:root {
+    --primary-color: rgb(49, 57,102);
+    --primary-color-light: rgb(164, 170, 208);
+    --secondary-color: rgb(246, 168, 0);
+    --secondary-color-light: rgb(249, 218, 151);
+
+    --bg-color: rgb(231, 231, 231);
+    --surface-color: rgb(250, 250, 250);
+
+    --text-color: rgb(27, 27, 27);
+    --link-color: rgb(0, 102, 204);
+    --placeholder-color: rgb(160, 160, 160);
+}

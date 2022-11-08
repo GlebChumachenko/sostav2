@@ -8,8 +8,6 @@
     <section>
       <div class="cont">
         <div class="team-logo"/>
-        <p class="team-info">Team title</p>
-        <p class="team-info">Team city</p>
         <div class="change-btns">
           <button class="change-btn1">Обзор</button>
           <button class="change-btn2">Состав</button>
@@ -22,88 +20,91 @@
         <button class="squad-btn1">Основной состав</button>
         <button class="squad-btn2">Запасные игроки</button>
       </div>
-      <div class="all-players-info">
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+      <div class="players-info">
+        <div class="all-players-info">
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
-        </div>
-        <div class="player-info">
-          <button class="player-number">12</button>
-          <div>
-            <h2 class="player-name">ФИО</h2>
-            <h3 class="player-role">Роль в команде</h3>
+          <div class="player-info">
+            <button class="player-number">12</button>
+            <div>
+              <h2 class="player-name">ФИО</h2>
+              <h3 class="player-role">Роль в команде</h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
     <p class="v-score">{{ inthomescore }}  {{ intawayscore }}</p>
+  <footer></footer>
 </template>
 
 <script>
@@ -139,9 +140,10 @@ export default {
 <style scoped>
 
 header {
-  background-color: #2c3e50;
-  padding: 0 14px;
-  height: 60px;
+  background-color: rgb(49, 57, 102);
+  padding: 0 32px;
+  height: 72px;
+  margin-bottom: 32px;
 }
 
 .head{
@@ -176,94 +178,92 @@ header {
 }
 
 .cont {
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
 }
 
 .cont2{
   margin: 0 auto;
-  width: 670px;
+  width: 800px;
   background-color: white;
+  border-radius: 8px;
 }
 
 .team-logo {
-  margin-top: 100px;
-  height: 200px;
-  width: 200px;
+  height: 118px;
+  width: 128px;
+  margin-bottom: 32px;
   background-size: 100%;
   background-image: url("../assets/image.png");
 }
 
-.team-info{
-  margin-left: 50px;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
 .change-btns {
   display: flex;
-  margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 0;
 }
 
 
-.change-btn2{
-  font-size: 20px;
-  background-color: white;
-  color: black;
+.change-btn1{
+  font-size: 15px;
+  background-color: #e7e7e7;
+  color: darkgrey;
   border: 0;
-  margin-left: 10px;
-  margin-bottom: 0 ;
+  margin: 0px 16px 0px 8px;
+  padding: 12px 20px;
   cursor: pointer;
-  border-radius: 5px 5px 0 0;
+  border-radius: 8px 8px 0 0;
   transition: all 0.2s ease;
 }
 
-.change-btn1{
-  font-size: 20px;
-  background-color: #2c3e50;
+.change-btn2{
+  font-size: 15px;
+  background-color:  rgb(49, 57, 102);
   color: white;
   border: 0;
-  margin-bottom: 0;
-  border-radius: 5px 5px 0 0;
+  margin: 0px 8px 0px 16px;
+  padding: 12px 20px;
+  border-radius: 8px 8px 0 0;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .squad-btns{
   display: flex;
-  padding: 30px 50px;
+  padding: 30px 49px 0px 49px;
 }
 
 .squad-btn1 {
-  height: 30px;
-  width: 170px;
+  font-size: 15px;
+  height: 36px;
+  width: 120px;
+  padding: 10px;
   flex-grow: 1;
-  margin-right: 40px;
+  margin-right: 33px;
   border: 0;
-  border-color: darkgray;
-  background-color: darkorange;
-  color: white;
-  border-radius: 5px;
+  background-color: rgb(246, 168, 0);
+  color: black;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .squad-btn1:hover{
-  background-color: chocolate;
+  background-color: rgb(249, 218, 151);
 }
 
 .squad-btn2 {
-  height: 30px;
-  width: 170px;
+  font-size: 15px;
+  height: 36px;
+  width: 120px;
+  padding: 10px;
   flex-grow: 1;
-  margin-left: 40px;
+  margin-left: 33px;
   border-style: solid;
   border-color: darkgray;
   background-color: white;
   color: darkgray;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -275,27 +275,44 @@ header {
 
 .player-info {
   display: flex;
-  margin: 20px 50px;
+  margin-bottom: 16px;
 }
-.player-number {
-  border-radius: 5px;
-  width: 50px;
-  height: 50px;
 
-  background-color: #2c3e50;
+.players-info {
+  padding: 20px;
+}
+
+.player-number {
+  font-size: 20px;
+  margin-right: 24px;
+  width: 48px;
+  height: 48px;
+  background-color: rgb(49, 57, 102);
   color: white;
   border: 0;
+  border-radius: 4px;
+  padding: 15px;
 }
 
 .player-name {
-  font-size: 20px;
-  margin: 0px 20px 0px 30px;
+  width: 30px;
+  height: 12px;
+  font-size: 16px;
+  margin: 2px 20px 0px 13px;
 }
 
 .player-role {
-  font-size: 15px;
-  margin: 0px 20px 20px 30px;
+  width: 136px;
+  height: 13px;
+  font-size: 16px;
+  margin: 8px 20px 15px 13px;
   color: darkgrey;
+}
+
+footer {
+  height: 204px;
+  padding: 32px;
+  background-color: rgb(49, 57, 102);
 }
 
 .v-score {
