@@ -108,7 +108,12 @@
 </template>
 
 <script>
+import colors from "@/components/colors.css";
 export default {
+  assets:{
+    colors
+  },
+
   name: "v-score",
   props: {
     inthomescore:{
@@ -140,7 +145,7 @@ export default {
 <style scoped>
 
 header {
-  background-color: rgb(49, 57, 102);
+  background-color: var(--primary-color);
   padding: 0 32px;
   height: 72px;
   margin-bottom: 32px;
@@ -218,7 +223,7 @@ header {
 
 .change-btn2{
   font-size: 15px;
-  background-color:  rgb(49, 57, 102);
+  background-color:var(--primary-color);
   color: white;
   border: 0;
   margin: 0px 8px 0px 16px;
@@ -241,7 +246,7 @@ header {
   flex-grow: 1;
   margin-right: 33px;
   border: 0;
-  background-color: rgb(246, 168, 0);
+  background-color: var(--secondary-color);
   color: black;
   border-radius: 4px;
   cursor: pointer;
@@ -249,7 +254,7 @@ header {
 }
 
 .squad-btn1:hover{
-  background-color: rgb(249, 218, 151);
+  background-color: var(--secondary-color-light);
 }
 
 .squad-btn2 {
@@ -283,11 +288,11 @@ header {
 }
 
 .player-number {
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 24px;
   width: 48px;
   height: 48px;
-  background-color: rgb(49, 57, 102);
+  background-color: var(--primary-color);
   color: white;
   border: 0;
   border-radius: 4px;
@@ -312,7 +317,7 @@ header {
 footer {
   height: 204px;
   padding: 32px;
-  background-color: rgb(49, 57, 102);
+  background-color: var(--primary-color);
 }
 
 .v-score {
@@ -320,5 +325,6 @@ footer {
   font-size: 2rem;
   font-weight: 900;
 }
+
 
 </style>
