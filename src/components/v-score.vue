@@ -1,114 +1,7 @@
-<template>
-    <header class = "header">
-      <div class="head">
-        <h1 class = "h1">Logo</h1>
-        <button class="btn" type="submit"> Войти </button>
-      </div>
-    </header>
-    <section>
-      <div class="cont">
-        <div class="team-logo"/>
-        <div class="change-btns">
-          <button class="change-btn1">Обзор</button>
-          <button class="change-btn2">Состав</button>
-        </div>
-      </div>
-    </section>
-  <section>
-    <div class="cont2">
-      <div class="squad-btns">
-        <button class="squad-btn1">Основной состав</button>
-        <button class="squad-btn2">Запасные игроки</button>
-      </div>
-      <div class="players-info">
-        <div class="all-players-info">
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-          <div class="player-info">
-            <button class="player-number">12</button>
-            <div>
-              <h2 class="player-name">ФИО</h2>
-              <h3 class="player-role">Роль в команде</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-    <p class="v-score">{{ inthomescore }}  {{ intawayscore }}</p>
-  <footer></footer>
-</template>
+<template></template>
 
 <script>
-import colors from "@/components/colors.css";
+import colors from "@/assets/colors.css";
 export default {
   assets:{
     colors
@@ -144,7 +37,7 @@ export default {
 
 <style scoped>
 
-header {
+.header {
   background-color: var(--primary-color);
   padding: 0 32px;
   height: 72px;
@@ -161,7 +54,6 @@ header {
   font-weight: 900;
   height: 26px;
   width: 64px;
-  font-family: 'Arial', sans-serif;
   color: white;
   flex-grow: 1;
 }
@@ -182,16 +74,17 @@ header {
   background-color: darkgray;
 }
 
-.cont {
-  width: 800px;
-  margin: 0 auto;
-}
+
 
 .cont2{
   margin: 0 auto;
   width: 800px;
   background-color: white;
   border-radius: 8px;
+}
+.cont {
+  width: 800px;
+  margin: 0 auto;
 }
 
 .team-logo {
@@ -278,13 +171,15 @@ header {
   color: white;
 }
 
-.player-info {
-  display: flex;
-  margin-bottom: 16px;
-}
+
 
 .players-info {
   padding: 20px;
+}
+
+.player-info {
+  display: flex;
+  margin-bottom: 16px;
 }
 
 .player-number {
@@ -314,7 +209,24 @@ header {
   color: darkgrey;
 }
 
-footer {
+.coach-info{
+  width: 325px;
+  height: 32px;
+  display: flex;
+}
+
+.coach-title {
+  font-size: 12px;
+  margin: 20px 30px 20px 0px;
+  font-weight: 700;
+}
+.coach-name {
+  font-size: 12px;
+  margin: 20px 0px 20px 30px;
+  font-weight: 700;
+}
+
+.footer {
   height: 204px;
   padding: 32px;
   background-color: var(--primary-color);

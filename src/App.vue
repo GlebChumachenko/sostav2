@@ -1,22 +1,30 @@
 <template>
 <!--  <img alt="Vue logo" src="./assets/logo.png">-->
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <team-page/>
 </template>
 
 <script>
-import HelloWorld from './components/v-score.vue'
-
+//import HelloWorld from './components/v-score.vue'
+import teamPage from "@/components/team-page";
+import colors from "@/assets/colors.css";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    teamPage
+  },
+
+  assets: {
+    colors
   }
+
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*text-align: center;*/
