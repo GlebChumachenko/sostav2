@@ -1,13 +1,19 @@
-<template>
-  <div class="squad-btns">
-    <button class="squad-btn1">Основной состав</button>
+<template >
+  <div class="squad-btns" name="change-squad-btns">
+    <button class="squad-btn1" v-on:click="show = !show">Основной состав</button>
     <button class="squad-btn2">Запасные игроки</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "change-squad-btns"
+  name: "change-squad-btns",
+  props: {
+    data: {
+      show: true
+    }
+  }
+
 }
 </script>
 
