@@ -3,8 +3,8 @@
     <div class="cont">
       <div class="team-logo"/>
       <div class="change-btns">
-        <button class="change-btn1">Обзор</button>
-        <button class="change-btn2">Состав</button>
+        <button :class="[isActive? 'change-btn1' : 'change-btn2']" @click="isActive = false">Обзор</button>
+        <button :class="[isActive? 'change-btn2' : 'change-btn1']" @click="isActive = true">Состав</button>
       </div>
     </div>
   </section>
@@ -12,7 +12,12 @@
 
 <script>
 export default {
-  name: "team-info"
+  name: "team-info",
+  data() {
+    return {
+      isActive: true,
+    }
+  }
 }
 </script>
 
@@ -43,7 +48,7 @@ export default {
   background-color: var(--bg-color);
   color: var(--placeholder-color);
   border: 0;
-  margin: 0rem 1rem 0rem 0.5rem;
+  margin: 0rem 1rem 0rem 1rem;
   padding: 0.75rem 1.25rem;
   cursor: pointer;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -55,7 +60,7 @@ export default {
   background-color:var(--primary-color);
   color: var(--surface-color);
   border: 0;
-  margin: 0rem 0.5rem 0rem 1rem;
+  margin: 0rem 1rem 0rem 1rem;
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem 0.5rem 0 0;
   cursor: pointer;

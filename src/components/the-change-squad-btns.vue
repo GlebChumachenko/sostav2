@@ -1,18 +1,21 @@
 <template >
   <div class="squad-btns" name="change-squad-btns">
-    <button class="squad-btn1" v-on:click="show = !show">Основной состав</button>
-    <button class="squad-btn2">Запасные игроки</button>
+      <button :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false" >Основной состав
+      </button>
+
+    <button  :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true">Запасные игроки</button>
   </div>
 </template>
 
 <script>
 export default {
   name: "change-squad-btns",
-  props: {
-    data: {
-      show: true
+    data() {
+      return {
+        isActive: false,
+      }
     }
-  }
+
 
 }
 </script>
@@ -25,12 +28,13 @@ export default {
 }
 
 .squad-btn1 {
+  padding: 0;
   font-size: 1rem;
   height: 2.25rem;
   width: 7.5rem;
   padding: 0.6rem 0.6rem 0.8rem 0.6rem;
   flex-grow: 1;
-  margin-right: 1.75rem;
+  margin: 0 1.75rem;
   border: 0;
   background-color: var(--secondary-color);
   color: var(--text-color);
@@ -44,12 +48,13 @@ export default {
 }
 
 .squad-btn2 {
+  padding: 0rem;
   font-size: 1rem;
   height: 2.25rem;
   width: 7.5rem;
   padding: 0.6rem 0.6rem 0.8rem 0.6rem;
   flex-grow: 1;
-  margin-left: 1.75rem;
+  margin: 0 1.75rem;
   border-style: solid;
   border-color: var(--placeholder-color);
   background-color: var(--surface-color);

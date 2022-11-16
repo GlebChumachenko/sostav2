@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import changeSquadBtns from "@/components/change-squad-btns";
-import playersInfo from "@/components/players-info";
+import changeSquadBtns from "@/components/the-change-squad-btns";
+import playersInfo from "@/components/the-players-info";
 export default {
   components: {
     changeSquadBtns,

@@ -1,7 +1,7 @@
 <template>
     <div class="players-info">
       <div class="all-players-info">
-        <player-info v-for="item in 11" :key="item.id">
+        <player-info :players="players" v-for="players in 11" :key="players.id">
         </player-info>
         <coach-info/>
       </div>
@@ -9,14 +9,19 @@
 </template>
 
 <script>
-import playerInfo from "@/components/player-info";
-import coachInfo from "@/components/coach-info";
+import playerInfo from "@/components/base-player-info";
+import coachInfo from "@/components/base-coach-info";
 export default {
   components: {
     playerInfo,
     coachInfo
   },
-  name: "players-info"
+  name: "players-info",
+  data() {
+    return {
+      players: [playerInfo, playerInfo, playerInfo]
+    }
+  }
 }
 </script>
 

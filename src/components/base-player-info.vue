@@ -10,7 +10,13 @@
 
 <script>
 export default {
-  name: "player-info"
+  name: "player-info",
+  props: {
+    players: {
+      type: Array,
+      required: true
+    }
+  }
 }
 </script>
 
