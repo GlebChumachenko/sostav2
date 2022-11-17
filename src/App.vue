@@ -1,5 +1,9 @@
 <template>
-  <team-page/>
+
+  <router-view>
+    <team-page/>
+  </router-view>
+
 </template>
 
 <script>
