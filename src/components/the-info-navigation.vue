@@ -3,8 +3,8 @@
     <div class="cont">
       <div class="team-logo"/>
       <div class="change-btns">
-        <button :class="[isActive? 'change-btn1' : 'change-btn2']" @click="isActive = false">Обзор</button>
-        <button :class="[isActive? 'change-btn2' : 'change-btn1']" @click="isActive = true">Состав</button>
+        <a :class="[isActive? 'change-btn1' : 'change-btn2']" @click="isActive = false">Обзор</a>
+        <a :class="[isActive? 'change-btn2' : 'change-btn1']" @click="isActive = true">Состав</a>
       </div>
     </div>
   </section>

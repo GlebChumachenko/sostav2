@@ -1,7 +1,7 @@
 <template>
     <div class="players-info">
       <div class="all-players-info">
-        <player-info :players="players" v-for="players in 11" :key="players.id">
+        <player-info :players="players" v-for="player in players" :key="player.id">
         </player-info>
         <coach-info/>
       </div>

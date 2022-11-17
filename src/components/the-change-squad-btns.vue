@@ -1,9 +1,7 @@
 <template >
   <div class="squad-btns" name="change-squad-btns">
-      <button :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false" >Основной состав
-      </button>
-
-    <button  :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true">Запасные игроки</button>
+    <a target="_blank" :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false" >Основной состав</a>
+    <a target="_blank" :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true">Запасные игроки</a>
   </div>
 </template>
 
@@ -28,11 +26,10 @@ export default {
 }
 
 .squad-btn1 {
-  padding: 0;
+  text-align: center;
   font-size: 1rem;
-  height: 2.25rem;
   width: 7.5rem;
-  padding: 0.6rem 0.6rem 0.8rem 0.6rem;
+  padding: 0.6rem;
   flex-grow: 1;
   margin: 0 1.75rem;
   border: 0;
@@ -48,13 +45,13 @@ export default {
 }
 
 .squad-btn2 {
-  padding: 0rem;
+  text-align: center;
   font-size: 1rem;
-  height: 2.25rem;
   width: 7.5rem;
-  padding: 0.6rem 0.6rem 0.8rem 0.6rem;
+  padding: 0.6rem;
   flex-grow: 1;
   margin: 0 1.75rem;
+  border: 1px;
   border-style: solid;
   border-color: var(--placeholder-color);
   background-color: var(--surface-color);
