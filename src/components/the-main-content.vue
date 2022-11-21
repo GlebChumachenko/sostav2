@@ -2,8 +2,8 @@
   <section>
     <div class="cont2">
       <div class="squad-btns" >
-        <a href="#/players"  :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false; showPlayers=true; showReserve=false" >Основной состав</a>
-        <a href="#/reserve"  :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true; showReserve=true; showPlayers=false">Запасные игроки</a>
+        <a :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false; showPlayers=true; showReserve=false" >Основной состав</a>
+        <a  :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true; showReserve=true; showPlayers=false">Запасные игроки</a>
       </div>
       <transition>
         <players-info v-if="showPlayers"/>
@@ -16,17 +16,25 @@
 </template>
 
 <script>
-import playersInfo from "@/components/the-players-info";
-import theReserveInfo from "@/components/the-reserve-info";
+import playersInfo from "@/components/players-info";
+import theReserveInfo from "@/components/reserve-info";
+
+import {inject} from "vue";
 
 export default {
-
   data() {
     return {
       isActive: false,
       showPlayers: true,
-      showReserve: false
+      showReserve: false,
+      showTimetable: false,
+      showTeam: true
     }
+  },
+
+  created(){
+     this.showTeam = inject('team')
+    this.showTimetable = inject('timetable')
   },
 
   components: {
@@ -41,9 +49,6 @@ export default {
 
 <style scoped>
 
-a {
-  text-decoration: none;
-}
 .cont2{
   margin: 0 auto;
   width: 50rem;

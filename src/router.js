@@ -1,12 +1,21 @@
-import {createRouter, createWebHashHistory} from 'vue-router';
-import basePlayerInfo from "@/components/base-player-info";
-import theReserveInfo from "@/components/the-reserve-info";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-export default createRouter({
-    history: createWebHashHistory(),
+Vue.use(VueRouter)
+import teamTimetable from "@/components/team-timetable";
+import theMainContent from "@/components/the-main-content";
+
+
+
+const router = new VueRouter({
     routes: [
-        { path: '/players', component: basePlayerInfo },
-        { path: '/reserve', component: theReserveInfo}
+        { path: '/', component: theMainContent, name: 'team' },
+        { path: '/:timetable', component: teamTimetable, name: 'timetable'}
     ]
-
 })
+
+export default router;
+
+
+
+

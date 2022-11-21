@@ -1,7 +1,7 @@
 <template>
   <div class="players-info">
     <div class="all-players-info">
-      <player-info  v-for="player in 3" :key="player.id">
+      <player-info  :players="players" v-for="player in players" :key="player.id">
       </player-info>
       <coach-info/>
     </div>
@@ -16,6 +16,12 @@ export default {
   components: {
     playerInfo,
     coachInfo
+  },
+
+  data() {
+    return {
+      players: [playerInfo, playerInfo, playerInfo]
+    }
   },
   name: "the-reserve-info"
 }

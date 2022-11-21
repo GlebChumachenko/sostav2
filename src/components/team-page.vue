@@ -2,7 +2,7 @@
   <page-top/>
 
   <team-info/>
-  <main-content/>
+  <router-view/>
 
   <page-bottom/>
 </template>
@@ -10,13 +10,13 @@
 <script>
 import pageTop from "@/components/the-page-top";
 import pageBottom from "@/components/the-page-bottom";
-import mainContent from "@/components/the-main-content";
-import teamInfo from "@/components/the-info-navigation";
+//import mainContent from "@/components/the-main-content";
+import teamInfo from "@/components/info-navigation";
 export default {
   components: {
     pageBottom,
     pageTop,
-    mainContent,
+    // mainContent,
     teamInfo
   },
 

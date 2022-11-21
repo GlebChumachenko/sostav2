@@ -3,22 +3,27 @@
     <div class="cont">
       <div class="team-logo"/>
       <div class="change-btns">
-        <a target="_blank" :class="[isActive? 'change-btn1' : 'change-btn2']" @click="isActive = false">Обзор</a>
-        <a  target="_blank" :class="[isActive? 'change-btn2' : 'change-btn1']" @click="isActive = true">Состав</a>
+        <router-link to="{name: 'timetable'}">
+          <a :class="[isActive? 'change-btn1' : 'change-btn2']" @click="isActive=false">Обзор</a>
+        </router-link>
+        <router-link to="{name: 'team'}">
+        <a  :class="[isActive? 'change-btn2' : 'change-btn1']" @click="isActive=true">Состав</a>
+        </router-link>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+
 export default {
   name: "team-info",
-  data() {
-    return {
-      isActive: true,
+    data() {
+      return {
+        isActive: true,
+      }
     }
   }
-}
 </script>
 
 <style scoped>

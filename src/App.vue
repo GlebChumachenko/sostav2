@@ -1,13 +1,10 @@
 <template>
-
-  <router-view>
     <team-page/>
-  </router-view>
-
 </template>
 
 <script>
-import teamPage from "@/components/the-team-page";
+
+import teamPage from "@/components/team-page";
 import colors from "@/assets/colors.css";
 import common from "@/assets/common.css";
 export default {
