@@ -16,9 +16,9 @@ export default {
 <style scoped>
 header {
   background-color: var(--primary-color);
-  padding: 0 32px;
-  height: 72px;
-  margin-bottom: 32px;
+  padding: 0 2rem;
+  height: 4.5rem;
+  margin-bottom: 2rem;
 }
 
 .head{

@@ -1,4 +1,4 @@
-import {createRouter,createWebHashHistory} from "vue-router";
+import {createRouter,createWebHistory} from "vue-router";
 import teamTimetable from "@/components/team-timetable";
 import theMainContent from "@/components/the-main-content";
 import playersInfo from "@/components/players-info";
@@ -14,17 +14,17 @@ let  routes = [
         name: 'timetable'
     },
     {
-        path: '/:team',
+        path: '/team',
         component: theMainContent,
         name: 'team',
         children: [
             {
-                path: '/:team/',
+                path: '/team/',
                 component: playersInfo,
                 name: 'mainsquad'
             },
             {
-                path: '/:team/reserve',
+                path: '/team/reserve',
                 component: reserveInfo,
                 name: 'reserve'
             }
@@ -33,7 +33,7 @@ let  routes = [
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes
 })
 

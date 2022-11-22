@@ -1,10 +1,14 @@
 <template>
-  <page-top/>
+  <div class="main">
+    <page-top/>
 
-  <team-info/>
-  <router-view :key="$router.fullPath"></router-view>
+    <div class="content">
+      <team-info/>
+      <router-view :key="$router.fullPath"></router-view>
+    </div>
 
-  <page-bottom/>
+    <page-bottom/>
+  </div>
 </template>
 
 <script>
@@ -23,5 +27,16 @@ export default {
 </script>
 
 <style scoped>
+
+.main{
+display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content{
+  flex-grow: 1;
+}
+
 
 </style>

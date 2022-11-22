@@ -2,8 +2,8 @@
   <section>
     <div class="cont2">
       <div class="squad-btns" >
-        <router-link to="/:team/" :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false">Основной состав</router-link>
-        <router-link to="/:team/reserve" :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true">Запасные игроки</router-link>
+        <router-link to="/team/" :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false">Основной состав</router-link>
+        <router-link to="/team/reserve" :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true">Запасные игроки</router-link>
       </div>
         <router-view :key="$router.fullPath"></router-view>
     </div>

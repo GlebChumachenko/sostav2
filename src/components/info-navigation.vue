@@ -9,7 +9,7 @@
             @click="isActive=true">Обзор
         </router-link>
         <router-link
-            to="/:team"
+            to="/team"
             :class="[isActive? 'change-btn1' : 'change-btn2']"
             @click="isActive=false">Состав
         </router-link>
