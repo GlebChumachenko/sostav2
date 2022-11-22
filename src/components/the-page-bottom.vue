@@ -13,6 +13,6 @@ footer {
   height: 12.75rem;
   padding: 2rem;
   background-color: var(--primary-color);
-  margin-top: auto;
+
 }
 </style>

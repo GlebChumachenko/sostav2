@@ -12,7 +12,11 @@ export default {
 
 <style scoped>
 .team-timetable {
-  display: flex;
-  padding: 50px 20px;
+  text-align: center;
+  padding: 4rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+
+
 }
 </style>

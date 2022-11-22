@@ -2,46 +2,25 @@
   <section>
     <div class="cont2">
       <div class="squad-btns" >
-        <a :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false; showPlayers=true; showReserve=false" >Основной состав</a>
-        <a  :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true; showReserve=true; showPlayers=false">Запасные игроки</a>
+        <router-link to="/:team/" :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false">Основной состав</router-link>
+        <router-link to="/:team/reserve" :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true">Запасные игроки</router-link>
       </div>
-      <transition>
-        <players-info v-if="showPlayers"/>
-      </transition>
-      <transition>
-        <the-reserve-info v-if="showReserve"/>
-      </transition>
+        <router-view :key="$router.fullPath"></router-view>
     </div>
   </section>
 </template>
 
 <script>
-import playersInfo from "@/components/players-info";
-import theReserveInfo from "@/components/reserve-info";
 
-import {inject} from "vue";
+
 
 export default {
   data() {
     return {
-      isActive: false,
-      showPlayers: true,
-      showReserve: false,
-      showTimetable: false,
-      showTeam: true
+      isActive: false
     }
   },
 
-  created(){
-     this.showTeam = inject('team')
-    this.showTimetable = inject('timetable')
-  },
-
-  components: {
-    playersInfo,
-    theReserveInfo
-
-  },
 
   name: "main-content"
 }

@@ -3,11 +3,15 @@
     <div class="cont">
       <div class="team-logo"/>
       <div class="change-btns">
-        <router-link to="{name: 'timetable'}">
-          <a :class="[isActive? 'change-btn1' : 'change-btn2']" @click="isActive=false">Обзор</a>
+        <router-link
+            to="/"
+            :class="[isActive? 'change-btn2' : 'change-btn1']"
+            @click="isActive=true">Обзор
         </router-link>
-        <router-link to="{name: 'team'}">
-        <a  :class="[isActive? 'change-btn2' : 'change-btn1']" @click="isActive=true">Состав</a>
+        <router-link
+            to="/:team"
+            :class="[isActive? 'change-btn1' : 'change-btn2']"
+            @click="isActive=false">Состав
         </router-link>
       </div>
     </div>

@@ -1,17 +1,40 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
+import {createRouter,createWebHashHistory} from "vue-router";
 import teamTimetable from "@/components/team-timetable";
 import theMainContent from "@/components/the-main-content";
+import playersInfo from "@/components/players-info";
+import reserveInfo from "@/components/reserve-info";
 
 
 
-const router = new VueRouter({
-    routes: [
-        { path: '/', component: theMainContent, name: 'team' },
-        { path: '/:timetable', component: teamTimetable, name: 'timetable'}
-    ]
+
+let  routes = [
+    {
+        path: '/',
+        component: teamTimetable,
+        name: 'timetable'
+    },
+    {
+        path: '/:team',
+        component: theMainContent,
+        name: 'team',
+        children: [
+            {
+                path: '/:team/',
+                component: playersInfo,
+                name: 'mainsquad'
+            },
+            {
+                path: '/:team/reserve',
+                component: reserveInfo,
+                name: 'reserve'
+            }
+        ]
+    }
+]
+
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes
 })
 
 export default router;
