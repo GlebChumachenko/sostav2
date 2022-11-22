@@ -1,9 +1,9 @@
 <template>
   <div class="player-info">
-    <button class="player-number">12</button>
+    <a class="player-number">{{ number }}</a>
     <div>
-      <h2 class="player-name">ФИО</h2>
-      <h3 class="player-role">Роль в команде</h3>
+      <h2 class="player-name">{{ name }}</h2>
+      <h3 class="player-role">{{ role }}</h3>
     </div>
   </div>
 </template>
@@ -11,12 +11,14 @@
 <script>
 export default {
   name: "player-info",
-  props: {
-    players: {
-      type: Array,
-      required: true
-    }
-  }
+  props: [
+    "name",
+    "role",
+    "number",
+    "players"
+  ]
+
+
 }
 </script>
 
@@ -28,15 +30,16 @@ export default {
 }
 
 .player-number {
+  text-align: center;
   font-size: 1rem;
   margin-right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--primary-color);
   color: var(--surface-color);
   border: 0;
   border-radius: 0.25rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .player-name {

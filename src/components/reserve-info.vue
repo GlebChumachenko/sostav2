@@ -1,7 +1,14 @@
 <template>
   <div class="players-info">
     <div class="all-players-info">
-      <player-info  :players="players" v-for="player in players" :key="player.id">
+      <player-info
+          :players="players"
+          v-for="player in players"
+          :key="player.id"
+          :number="number"
+          :role="role"
+          :name="playername"
+      >
       </player-info>
       <coach-info/>
     </div>
@@ -20,7 +27,10 @@ export default {
 
   data() {
     return {
-      players: [playerInfo, playerInfo, playerInfo]
+      players: [playerInfo, playerInfo, playerInfo],
+      playername: 'ФИО',
+      number: '12',
+      role: 'Роль в команде'
     }
   },
   name: "the-reserve-info"
