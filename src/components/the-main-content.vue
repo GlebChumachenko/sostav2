@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="cont2">
+    <div class="cont">
       <div class="squad-btns" >
         <router-link to="/team/" :class="[isActive? 'squad-btn2' : 'squad-btn1']" @click="isActive = false">Основной состав</router-link>
         <router-link to="/team/reserve" :class="[isActive? 'squad-btn1' : 'squad-btn2']" @click="isActive = true">Запасные игроки</router-link>
@@ -28,12 +28,29 @@ export default {
 
 <style scoped>
 
-.cont2{
-  margin: 0 auto;
+.cont{
   width: 50rem;
   background-color: var(--surface-color);
   border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 53rem) {
+  .cont{
+    max-width: 43rem;
+  }
+}
+
+@media (max-width: 46rem) {
+  .cont{
+    max-width: 36rem;
+  }
+}
+
+@media (max-width: 39rem) {
+  .cont{
+    max-width: none;
+  }
 }
 
 .squad-btns{
@@ -44,7 +61,7 @@ export default {
 .squad-btn1 {
   text-align: center;
   font-size: 1rem;
-  width: 7.5rem;
+  /*width: 7.5rem;*/
   padding: 0.6rem;
   flex-grow: 1;
   margin: 0 1.75rem;
@@ -63,7 +80,7 @@ export default {
 .squad-btn2 {
   text-align: center;
   font-size: 1rem;
-  width: 7.5rem;
+  /*width: 7.5rem;*/
   padding: 0.6rem;
   flex-grow: 1;
   margin: 0 1.75rem;

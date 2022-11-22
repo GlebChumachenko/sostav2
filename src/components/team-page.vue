@@ -29,14 +29,20 @@ export default {
 <style scoped>
 
 .main{
-display: flex;
+  display: flex;
   flex-direction: column;
-  min-height: 100vh;
+
 }
 
 .content{
   flex-grow: 1;
+  margin-bottom: 1.5rem;
 }
+
+
+
+
+
 
 
 </style>

@@ -4,9 +4,10 @@
         <player-info :players="players"
                      v-for="player in players"
                      :key="player.id"
-                     :number="number"
-                     :role="role"
-                     :name="playername"
+                     :number="player.number"
+                     :role="player.role"
+                     :name="player.name"
+
         >
         </player-info>
         <coach-info/>
@@ -25,10 +26,23 @@ export default {
   name: "players-info",
   data() {
     return {
-      players: [playerInfo, playerInfo, playerInfo, playerInfo, playerInfo, playerInfo, playerInfo, playerInfo, playerInfo,playerInfo, playerInfo],
-      playername: 'ФИО',
-      number: '12',
-      role: 'Роль в команде'
+
+      players: [{
+        id: 1,
+        name: "Player1",
+        role: "Striker",
+        number: "9"
+      }, {
+        id: 2,
+        name: "Player2",
+        role: "Defender",
+        number: "3"
+      },{
+        id: 3,
+        name: "Player3",
+        role: "Mildfielder",
+        number: "6"
+      }]
     }
   }
 }

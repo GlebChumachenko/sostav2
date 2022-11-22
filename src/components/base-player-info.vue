@@ -11,12 +11,11 @@
 <script>
 export default {
   name: "player-info",
-  props: [
-    "name",
-    "role",
-    "number",
-    "players"
-  ]
+  props: {
+    number: String,
+    name: String,
+    role: String
+  }
 
 
 }

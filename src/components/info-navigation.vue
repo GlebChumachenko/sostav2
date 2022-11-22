@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="cont">
+    <div class="cont2">
       <div class="team-logo"/>
       <div class="change-btns">
         <router-link
@@ -32,9 +32,28 @@ export default {
 
 <style scoped>
 
-.cont {
-  width: 50rem;
+.cont2{
+  max-width: 50rem;
   margin: 0 auto;
+}
+
+
+@media (max-width: 53rem) {
+  .cont2{
+    max-width: 43rem;
+  }
+}
+
+@media (max-width: 46rem) {
+  .cont2{
+    max-width: 36rem;
+  }
+}
+
+@media (max-width: 39rem) {
+  .cont2{
+    max-width: none;
+  }
 }
 
 .team-logo {
