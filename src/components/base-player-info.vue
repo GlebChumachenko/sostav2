@@ -12,9 +12,25 @@
 export default {
   name: "player-info",
   props: {
-    number: String,
-    name: String,
-    role: String
+    number:{
+      type: String,
+      defaul() {
+        return""
+      }
+    } ,
+
+    name: {
+      type: String,
+      defaul() {
+        return""
+      }
+    },
+    role: {
+      type: String,
+      defaul() {
+        return""
+      }
+    }
   }
 
 
@@ -29,7 +45,9 @@ export default {
 }
 
 .player-number {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1rem;
   margin-right: 1.5rem;
   width: 2rem;
@@ -55,4 +73,6 @@ export default {
   margin: 0.5rem 1.25rem 1rem 0.75rem;
   color: var(--placeholder-color);
 }
+
+
 </style>

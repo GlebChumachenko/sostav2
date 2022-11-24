@@ -1,13 +1,13 @@
 <template>
     <div class="players-info">
       <div class="all-players-info">
-        <player-info :players="players"
-                     v-for="player in players"
-                     :key="player.id"
-                     :number="player.number"
-                     :role="player.role"
-                     :name="player.name"
-
+        <player-info
+            :players="players"
+            v-for="player in players"
+            :key="player.id"
+            :number="player.number"
+            :role="player.role"
+            :name="player.name"
         >
         </player-info>
         <coach-info/>

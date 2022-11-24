@@ -23,40 +23,9 @@ header {
 
 .head{
   display: flex;
-  width: 85rem;
   margin: 0 auto;
+  justify-content: space-between;
 }
-
-@media (max-width: 95rem) {
-  .head{
-    max-width: 75rem;
-    max-height: 4.5rem;
-  }
-}
-
-@media (max-width: 80rem) {
-  .head{
-    max-width: 65rem;
-  }
-}
-
-@media (max-width: 70rem) {
-  .head{
-    max-width: 55rem;
-  }
-}
-
-@media (max-width: 60rem) {
-  .head{
-    max-width: 45rem;
-  }
-}
-@media (max-width: 50rem) {
-  .head{
-    max-width: 35rem;
-  }
-}
-
 
 .title{
   margin-bottom: 1rem;
@@ -66,7 +35,6 @@ header {
   width: 4rem;
   font-family: 'Arial', sans-serif;
   color: var(--surface-color);
-  flex-grow: 1;
 }
 
 .enter-btn{

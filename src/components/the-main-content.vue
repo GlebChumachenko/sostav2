@@ -29,41 +29,42 @@ export default {
 <style scoped>
 
 .cont{
-  width: 50rem;
+  width: 55%;
   background-color: var(--surface-color);
   border-radius: 0.5rem;
   margin: 0 auto;
+
 }
 
-@media (max-width: 53rem) {
-  .cont{
-    max-width: 43rem;
-  }
-}
+/*@media (max-width: 53rem) {*/
+/*  .cont{*/
+/*    max-width: 43rem;*/
+/*  }*/
+/*}*/
 
-@media (max-width: 46rem) {
-  .cont{
-    max-width: 36rem;
-  }
-}
+/*@media (max-width: 46rem) {*/
+/*  .cont{*/
+/*    max-width: 36rem;*/
+/*  }*/
+/*}*/
 
-@media (max-width: 39rem) {
-  .cont{
-    max-width: none;
-  }
-}
+/*@media (max-width: 39rem) {*/
+/*  .cont{*/
+/*    max-width: none;*/
+/*  }*/
+/*}*/
 
 .squad-btns{
   display: flex;
   padding: 2rem 3rem 0px 3rem;
+  justify-content: space-around;
 }
 
 .squad-btn1 {
   text-align: center;
   font-size: 1rem;
-  /*width: 7.5rem;*/
+  width: 20rem;
   padding: 0.6rem;
-  flex-grow: 1;
   margin: 0 1.75rem;
   border: 0;
   background-color: var(--secondary-color);
@@ -80,9 +81,8 @@ export default {
 .squad-btn2 {
   text-align: center;
   font-size: 1rem;
-  /*width: 7.5rem;*/
+  width: 20rem;
   padding: 0.6rem;
-  flex-grow: 1;
   margin: 0 1.75rem;
   border: 1px;
   border-style: solid;
@@ -93,6 +93,8 @@ export default {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
+
 
 .squad-btn2:hover{
   background-color: var(--placeholder-color);
