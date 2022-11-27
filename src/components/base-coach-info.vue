@@ -16,17 +16,19 @@ export default {
 .coach-info{
   width: 20rem;
   height: 2rem;
+  margin: 1.25rem 0;
   display: flex;
+  flex-grow: 1;
 }
 
 .coach-title {
   font-size: 0.75rem;
-  margin: 1.25rem 2rem 1.25rem 0;
+  margin: 0.6rem 2rem 0.6rem 0;
   font-weight: 700;
 }
 .coach-name {
   font-size: 0.75rem;
-  margin: 1.25rem 0 1.25rem 2rem;
+  margin: 0.6rem 0 0.6rem 2rem;
   font-weight: 700;
 }
 </style>

@@ -16,13 +16,12 @@ import pageTop from "@/components/the-page-top";
 import pageBottom from "@/components/the-page-bottom";
 import teamInfo from "@/components/info-navigation";
 export default {
+  name: "team-page",
   components: {
     pageBottom,
     pageTop,
     teamInfo
-  },
-
-  name: "team-page"
+  }
 }
 </script>
 
@@ -31,7 +30,7 @@ export default {
 .main{
   display: flex;
   flex-direction: column;
-
+  min-height: 100vh;
 }
 
 .content{

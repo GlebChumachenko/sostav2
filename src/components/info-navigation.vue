@@ -33,28 +33,34 @@ export default {
 <style scoped>
 
 .cont2{
-  width: 55%;
+  width: 22.5rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
 
-/*@media (max-width: 53rem) {*/
-/*  .cont2{*/
-/*    max-width: 43rem;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 1440px) {
+  .cont2{
+    width: 800px;
+  }
+}
 
-/*@media (max-width: 46rem) {*/
-/*  .cont2{*/
-/*    max-width: 36rem;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 992px) {
+  .cont2{
+    width: 600px
+  }
+}
 
-/*@media (max-width: 39rem) {*/
-/*  .cont2{*/
-/*    max-width: none;*/
-/*  }*/
-/*}*/
+@media screen and (max-width: 768px) {
+  .cont2{
+    width: 450px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cont2{
+    width: 360px;
+  }
+}
 
 .team-logo {
   height: 7.25rem;

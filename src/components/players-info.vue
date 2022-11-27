@@ -10,8 +10,9 @@
             :name="player.name"
         >
         </player-info>
-        <coach-info/>
+
       </div>
+      <coach-info/>
     </div>
 </template>
 
@@ -19,11 +20,11 @@
 import playerInfo from "@/components/base-player-info";
 import coachInfo from "@/components/base-coach-info";
 export default {
+  name: "players-info",
   components: {
     playerInfo,
     coachInfo
   },
-  name: "players-info",
   data() {
     return {
 
@@ -42,7 +43,38 @@ export default {
         name: "Player3",
         role: "Mildfielder",
         number: "6"
-      }]
+      },{
+        id: 4,
+        name: "Player4",
+        role: "Defender",
+        number: "2"
+      },{
+        id: 5,
+        name: "Player5",
+        role: "Defender",
+        number: "12"
+      },{
+        id: 6,
+        name: "Player6",
+        role: "Mildfielder",
+        number: "35"
+      },{
+        id: 7,
+        name: "Player7",
+        role: "Striker",
+        number: "17"
+      },{
+        id: 8,
+        name: "Player8",
+        role: "Striker",
+        number: "7"
+      },{
+        id: 9,
+        name: "Player9",
+        role: "Mildfielder",
+        number: "47"
+      }
+      ]
     }
   }
 }
@@ -52,5 +84,9 @@ export default {
 
 .players-info {
   padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
 }
+
+
 </style>
