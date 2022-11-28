@@ -37,7 +37,6 @@ export default {
 </script>
 
 <style scoped>
-
 .player-info {
   display: flex;
   margin-bottom: 1rem;
@@ -75,6 +74,4 @@ export default {
   margin: 0.5rem 1.25rem 1rem 0.75rem;
   color: var(--placeholder-color);
 }
-
-
 </style>

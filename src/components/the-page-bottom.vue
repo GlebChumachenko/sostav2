@@ -14,6 +14,4 @@ footer {
   padding: 2rem;
   background-color: var(--primary-color);
 }
-
-
 </style>

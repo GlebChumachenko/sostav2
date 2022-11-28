@@ -8,14 +8,14 @@
             :class="[isActive? 'change-btn2' : 'change-btn1']"
             @click="isActive=true"
         >
-          Обзор
+            Обзор
         </router-link>
         <router-link
             to="/team"
             :class="[isActive? 'change-btn1' : 'change-btn2']"
             @click="isActive=false"
         >
-          Состав
+            Состав
         </router-link>
       </div>
     </div>
@@ -40,31 +40,6 @@ export default {
   max-width: 50rem;
   margin: 0 auto;
 }
-
-@media (min-width: 576px) {
-  .cont2 {
-    width: 360px;
-  }
-}
-
-@media (min-width: 768px) {
-  .cont2 {
-    width: 450px;
-  }
-}
-
-@media (min-width: 992px) {
-  .cont2 {
-    width: 600px
-  }
-}
-
-@media (min-width: 1440px) {
-  .cont2 {
-    width: 800px;
-  }
-}
-
 
 .team-logo {
   height: 7.25rem;
@@ -103,5 +78,28 @@ export default {
   border-radius: 0.5rem 0.5rem 0 0;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+@media (min-width: 576px) {
+  .cont2 {
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cont2 {
+    width: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cont2 {
+    width: 600px
+  }
+}
+
+@media (min-width: 1440px) {
+  .cont2 {
+    width: 800px;
+  }
 }
 </style>

@@ -36,7 +36,6 @@ export default {
 </script>
 
 <style scoped>
-
 .cont{
   min-width: 22.5rem;
   max-width: 50rem;
@@ -97,6 +96,10 @@ export default {
   transition: all 0.2s ease;
 }
 
+.squad-btn2:hover{
+  background-color: var(--placeholder-color);
+  color: var(--surface-color);
+}
 
 @media (min-width: 576px) {
   .cont{
@@ -146,9 +149,5 @@ export default {
   .squad-btn2{
     width: 12.75rem;
   }
-}
-.squad-btn2:hover{
-  background-color: var(--placeholder-color);
-  color: var(--surface-color);
 }
 </style>

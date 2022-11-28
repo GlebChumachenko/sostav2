@@ -12,7 +12,6 @@ export default {
 </script>
 
 <style scoped>
-
 .coach-info{
   width: 20rem;
   height: 2rem;
