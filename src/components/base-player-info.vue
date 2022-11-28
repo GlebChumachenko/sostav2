@@ -48,6 +48,7 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  font-weight: 700;
   margin-right: 1.5rem;
   width: 2rem;
   height: 2rem;
@@ -62,6 +63,7 @@ export default {
   width: 2rem;
   height: 0.75rem;
   font-size: 1rem;
+  font-weight: 700;
   margin: 0.25rem 1.25rem 0 0.75rem;
 }
 
@@ -69,6 +71,7 @@ export default {
   width: 8.5rem;
   height: 0.75rem;
   font-size: 1rem;
+  font-weight: 700;
   margin: 0.5rem 1.25rem 1rem 0.75rem;
   color: var(--placeholder-color);
 }

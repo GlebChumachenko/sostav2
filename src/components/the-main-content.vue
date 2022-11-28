@@ -128,9 +128,11 @@ export default {
   }
   .squad-btn1{
     width: 10rem;
+    font-size: 1rem;
   }
   .squad-btn2{
     width: 10rem;
+    font-size: 1rem;
   }
 }
 

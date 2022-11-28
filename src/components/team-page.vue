@@ -26,7 +26,6 @@ export default {
 </script>
 
 <style scoped>
-
 .main{
   display: flex;
   flex-direction: column;
@@ -34,14 +33,8 @@ export default {
 }
 
 .content{
+  padding: 0 1rem;
   flex-grow: 1;
   margin-bottom: 1.5rem;
 }
-
-
-
-
-
-
-
 </style>
