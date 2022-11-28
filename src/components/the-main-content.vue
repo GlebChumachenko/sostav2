@@ -5,13 +5,15 @@
         <router-link
             to="/team/"
             :class="[isActive? 'squad-btn2' : 'squad-btn1']"
-            @click="isActive = false">
+            @click="isActive = false"
+        >
           Основной состав
         </router-link>
         <router-link
             to="/team/reserve"
             :class="[isActive? 'squad-btn1' : 'squad-btn2']"
-            @click="isActive = true">
+            @click="isActive = true"
+        >
           Запасные игроки
         </router-link>
       </div>
@@ -21,7 +23,6 @@
 </template>
 
 <script>
-
 
 
 export default {
@@ -37,13 +38,12 @@ export default {
 <style scoped>
 
 .cont{
-  width: 22.5rem;
+  min-width: 22.5rem;
   max-width: 50rem;
   min-height: 39rem;
   background-color: var(--surface-color);
   border-radius: 0.5rem;
   margin: 0 auto;
-
 }
 
 
@@ -59,7 +59,8 @@ export default {
   align-items: center;
   font-size: 0.75rem;
   font-weight: 700;
-  width: 7.5rem;
+  min-width: 7.5rem;
+  max-width: 12.5rem;
   height: 2rem;
   padding: 0.6rem;
   margin: 0 1rem;
@@ -81,7 +82,8 @@ export default {
   align-items: center;
   font-size: 0.75rem;
   font-weight: 700;
-  width: 7.5rem;
+  min-width: 7.5rem;
+  max-width: 12.5rem;
   height: 2rem;
   padding: 0.6rem;
   margin: 0 1rem;
@@ -95,42 +97,8 @@ export default {
   transition: all 0.2s ease;
 }
 
-@media screen and (max-width: 1440px) {
-  .cont{
-    width: 800px;
-  }
-  .squad-btn1{
-    width: 12.75rem;
-  }
-  .squad-btn2{
-    width: 12.75rem;
-  }
-}
 
-@media screen and (max-width: 992px) {
-  .cont{
-    width: 600px
-  }
-  .squad-btn1{
-    width: 10rem;
-  }
-  .squad-btn2{
-    width: 10rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cont{
-    width: 450px;
-  }
-  .squad-btn1{
-    width: 8.5rem;
-  }
-  .squad-btn2{
-    width: 8.5rem;
-  }
-}
-@media screen and (max-width: 576px) {
+@media (min-width: 576px) {
   .cont{
     width: 360px;
   }
@@ -142,8 +110,41 @@ export default {
   }
 }
 
+@media (min-width: 768px) {
+  .cont{
+    width: 450px;
+  }
+  .squad-btn1{
+    width: 8.5rem;
+  }
+  .squad-btn2{
+    width: 8.5rem;
+  }
+}
 
+@media (min-width: 992px) {
+  .cont{
+    width: 600px
+  }
+  .squad-btn1{
+    width: 10rem;
+  }
+  .squad-btn2{
+    width: 10rem;
+  }
+}
 
+@media (min-width: 1440px) {
+  .cont{
+    width: 800px;
+  }
+  .squad-btn1{
+    width: 12.75rem;
+  }
+  .squad-btn2{
+    width: 12.75rem;
+  }
+}
 .squad-btn2:hover{
   background-color: var(--placeholder-color);
   color: var(--surface-color);

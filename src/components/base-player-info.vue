@@ -12,23 +12,22 @@
 export default {
   name: "player-info",
   props: {
-    number:{
+    number: {
       type: String,
       defaul() {
-        return""
+        return ""
       }
-    } ,
-
+    },
     name: {
       type: String,
       defaul() {
-        return""
+        return ""
       }
     },
     role: {
       type: String,
       defaul() {
-        return""
+        return ""
       }
     }
   }

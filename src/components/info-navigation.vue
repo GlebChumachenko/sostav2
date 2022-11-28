@@ -6,12 +6,16 @@
         <router-link
             to="/"
             :class="[isActive? 'change-btn2' : 'change-btn1']"
-            @click="isActive=true">Обзор
+            @click="isActive=true"
+        >
+          Обзор
         </router-link>
         <router-link
             to="/team"
             :class="[isActive? 'change-btn1' : 'change-btn2']"
-            @click="isActive=false">Состав
+            @click="isActive=false"
+        >
+          Состав
         </router-link>
       </div>
     </div>
@@ -22,45 +26,45 @@
 
 export default {
   name: "team-info",
-    data() {
-      return {
-        isActive: true,
-      }
+  data() {
+    return {
+      isActive: true,
     }
   }
+}
 </script>
 
 <style scoped>
-
-.cont2{
-  width: 22.5rem;
+.cont2 {
+  min-width: 22.5rem;
   max-width: 50rem;
   margin: 0 auto;
 }
 
-
-@media screen and (max-width: 1440px) {
-  .cont2{
-    width: 800px;
+@media (min-width: 576px) {
+  .cont2 {
+    width: 360px;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .cont2{
+@media (min-width: 768px) {
+  .cont2 {
+    width: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cont2 {
     width: 600px
   }
 }
 
-@media screen and (max-width: 768px) {
-  .cont2{
-    width: 450px;
+@media (min-width: 1440px) {
+  .cont2 {
+    width: 800px;
   }
 }
-@media screen and (max-width: 576px) {
-  .cont2{
-    width: 360px;
-  }
-}
+
 
 .team-logo {
   height: 7.25rem;
@@ -77,7 +81,7 @@ export default {
 }
 
 
-.change-btn1{
+.change-btn1 {
   font-size: 1rem;
   background-color: var(--bg-color);
   color: var(--placeholder-color);
@@ -89,9 +93,9 @@ export default {
   transition: all 0.2s ease;
 }
 
-.change-btn2{
+.change-btn2 {
   font-size: 1rem;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   color: var(--surface-color);
   border: 0;
   margin: 0rem 1rem 0rem 1rem;

@@ -7,8 +7,7 @@
           :key="player.id"
           :number="player.number"
           :role="player.role"
-          :name="player.name"
-      >
+          :name="player.name">
       </player-info>
       <coach-info/>
     </div>
