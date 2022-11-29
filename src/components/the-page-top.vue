@@ -52,4 +52,5 @@ header {
 .enter-btn:hover{
   background-color:var(--placeholder-color);
 }
+
 </style>

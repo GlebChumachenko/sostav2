@@ -7,8 +7,8 @@
             :key="player.id"
             :number="player.number"
             :role="player.role"
-            :name="player.name">
-        </player-info>
+            :name="player.name"
+        />
       </div>
       <coach-info/>
     </div>
@@ -79,12 +79,9 @@ export default {
 </script>
 
 <style scoped>
-
 .players-info {
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
 }
-
-
 </style>

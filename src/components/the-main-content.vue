@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .cont{
-  min-width: 22.5rem;
+  min-width: 22rem;
   max-width: 50rem;
   min-height: 39rem;
   background-color: var(--surface-color);
@@ -62,7 +62,6 @@ export default {
   max-width: 12.5rem;
   height: 2rem;
   padding: 0.6rem;
-  margin: 0 1rem;
   border: 0;
   background-color: var(--secondary-color);
   color: var(--text-color);
@@ -85,7 +84,6 @@ export default {
   max-width: 12.5rem;
   height: 2rem;
   padding: 0.6rem;
-  margin: 0 1rem;
   border: 1px;
   border-style: solid;
   border-color: var(--placeholder-color);
@@ -109,7 +107,7 @@ export default {
     width: 7.5rem;
   }
   .squad-btn2{
-    width:7.5rem;
+    width: 7.5rem;
   }
 }
 

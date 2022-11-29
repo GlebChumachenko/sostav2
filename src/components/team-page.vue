@@ -37,4 +37,10 @@ export default {
   flex-grow: 1;
   margin-bottom: 1.5rem;
 }
+
+@media (min-width: 300px) {
+  .content {
+    padding: 0rem;
+  }
+}
 </style>

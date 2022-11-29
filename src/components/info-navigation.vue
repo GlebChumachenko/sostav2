@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .cont2 {
-  min-width: 22.5rem;
+  min-width: 22rem;
   max-width: 50rem;
   margin: 0 auto;
 }

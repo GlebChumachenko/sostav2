@@ -11,7 +11,7 @@ export default {
 <style scoped>
 footer {
   height: 5rem;
-  padding: 2rem;
+  padding: 0 2rem;
   background-color: var(--primary-color);
 }
 </style>
